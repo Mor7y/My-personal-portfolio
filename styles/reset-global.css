@@ -60,6 +60,31 @@ main {
   padding: 6rem 1rem;
 }
 
+.scroll-top {
+  position: fixed;
+  display: none;
+  opacity: 0.5;
+  place-items: center;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+  background-color: var(--theme-color);
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.scroll-top.show{
+  display: grid;
+}
+
+.scroll-top:hover{
+  opacity: 1;
+}
+
 /* Language Icons */
 .fa-html5 {
   color: rgb(227, 76, 38);
@@ -90,12 +115,6 @@ body.theme-purple {
   --theme-color: rgb(126, 22, 123);
 }
 
-@media screen and (max-width: 1200px) {
-  main {
-    margin-left: 0;
-  }
-}
-
 /*----------Scroll Reveal---------*/
 
 .about-descritpion.observed,
@@ -118,6 +137,12 @@ body.theme-purple {
   transition: 0;
   transform: translateX(20px);
   opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 565px) {

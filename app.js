@@ -4,6 +4,7 @@ const navSections = document.querySelectorAll(".nav-list a");
 const themeMenuToggle = document.querySelector(".theme i");
 const themePalete = document.querySelector(".color-palete");
 const themeColors = document.querySelectorAll(".color-palete li");
+const scrollTop = document.querySelector('.scroll-top')
 
 //----------------Events-----------------------//
 
@@ -176,10 +177,18 @@ window.onscroll = () => {
     const offsetTop = section.offsetTop - 500;
     const offsetBottom = section.clientHeight + offsetTop;
     const sectionId = section.getAttribute("id");
-    const navSection = document.querySelector(
-      `.nav-list a[href="#${sectionId}"]`
-    );
+    
+    if(window.scrollY > 300){
+      scrollTop.classList.add('show')
+    }else{
+      scrollTop.classList.remove('show')
+    }
+
+
     if (window.scrollY > offsetTop && window.scrollY < offsetBottom) {
+      const navSection = document.querySelector(
+        `.nav-list a[href="#${sectionId}"]`
+      );
       manageActiveClass(navSections, navSection);
     }
   });
