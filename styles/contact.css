@@ -1,0 +1,121 @@
+.contact-container {
+  background: linear-gradient(45deg, var(--main-color) 10%, var(--theme-color));
+  display: flex;
+  gap: 3rem;
+  overflow-x: clip;
+}
+
+.contact-left {
+  flex-basis: calc(45% - 1.5rem);
+}
+
+.contact-right {
+  flex-basis: calc(55% - 1.5rem);
+}
+
+.contact-left,
+.contact-right {
+  padding: 1rem;
+  background-color: var(--background-color);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: 1.5s;
+}
+.contact-list {
+  display: grid;
+  gap: 1.5rem;
+}
+.contact-item {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+.contact-icon {
+  display: grid;
+  place-items: center;
+  color: var(--theme-color);
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--theme-color);
+  transition: 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+  background-color: var(--theme-color);
+  color: white;
+  border-color: white;
+}
+
+.contact-link {
+  font-size: 0.83rem;
+  letter-spacing: -0.04rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.3rem;
+  font-size: 0.83rem;
+  resize: none;
+  outline: none;
+  border: 3px solid rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 2px 1px var(--theme-color);
+}
+
+.input-container:focus-within label {
+  color: var(--theme-color);
+  font-weight: 600;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.contact-form button {
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: 0.3s;
+  border: 3px solid transparent;
+}
+
+.contact-form button:hover {
+  background-color: var(--theme-color);
+}
+
+@media screen and (max-width: 700px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: calc(50% - 1.5rem);
+  }
+}
+
+@media screen and (max-width: 350px){
+    .contact-item{
+        gap: 1rem;
+    }
+
+    .contact-link{
+        font-size: 0.7rem;
+    }
+}

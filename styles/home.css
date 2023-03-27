@@ -1,0 +1,80 @@
+.home {
+  background: url("/portfoliu-website/images/background1.jpg");
+  background-position: center;
+  background-position-y: 60%;
+  background-attachment: fixed;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  overflow-x:hidden ;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home-introduction {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text-color1);
+  z-index: 1;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  line-height: 1.5;
+}
+
+.home-greeting {
+  font-weight: 600;
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  letter-spacing: -0.05rem;
+}
+
+.home-greeting span {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-family: "Aclonica", sans-serif;
+  color: var(--theme-color);
+}
+
+.home-introduction p {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 500;
+
+  letter-spacing: -0.04rem;
+}
+
+.download-cv {
+  font-weight: 600;
+  background-color: transparent;
+  justify-self: left;
+  padding: 1rem;
+  transition: 0.5s;
+  border: 2px solid var(--theme-color);
+  border-radius: 100vw;
+}
+
+.download-cv:hover {
+  background-color: var(--theme-color);
+}
+
+@media screen and (min-width: 1920px) {
+  .home {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    padding: 2rem;
+  }
+
+}

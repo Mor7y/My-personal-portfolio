@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/reset-global.css" />
+
+    <title>AG Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="theme">
+        <i class="fa-solid fa-paintbrush"></i>
+        <ul class="color-palete">
+          <li class="red active"></li>
+          <li class="green"></li>
+          <li class="blue"></li>
+          <li class="purple"></li>
+        </ul>
+      </div>
+
+      <div class="profile-container">
+        <img
+          class="profile-picture"
+          src="images/FB_IMG_1499254713257.jpg"
+          alt="a picture of me"
+        />
+        <h1 class="profile-name">G Anatolie</h1>
+        <div class="profile-icons">
+          <a
+            href="https://www.facebook.com/gheorghilas.anatolie/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/anatolie-gheorghilas-38a871146/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Mor7y" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#home" class="active"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="fa-solid fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="fa-solid fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <i class="nav-toggle fa-solid fa-bars"></i>
+
+      <footer>
+        <p>© 2023 Tolea AG</p>
+        <a href="https://unsplash.com/photos/JO_S6ewBqAk">background photo</a>
+      </footer>
+    </header>
+    <main class="main">
+      <!-------------------- Home ---------------------->
+
+      <section id="home" class="home">
+        <div class="home-introduction">
+          <h1 class="home-greeting" data-value="Hi, I'm Tolea!">
+            Hi, I'm <span>Tolea</span>!
+          </h1>
+          <p data-value="I'm a front-end developer">
+            I'm a front-end developer
+          </p>
+          <a
+            href="/portfoliu-website/CV/Gheorghilas Anatolie CV.pdf"
+            class="download-cv"
+            download
+            >Download CV</a
+          >
+        </div>
+      </section>
+
+      <!-------------------- About Me ---------------------->
+
+      <section id="about" class="about">
+        <div class="about-container">
+          <h1 class="section-title">About Me</h1>
+          <div class="about_img-wraper">
+            <img
+              src="/portfoliu-website/images/main-picture3.jpg"
+              alt="a picture of me"
+              class="about-img"
+            />
+          </div>
+
+          <div class="about-details">
+            <div class="details-container">
+              <h2 class="about-title" data-value="My Story:">My Story:</h2>
+              <p class="about-descritpion">
+                My journey began in September 2022 when I decided to teach
+                myself front-end development. What drew me to this field was the
+                idea of creating something visually pleasing yet engaging and
+                interactive for other people. Down the path, I realized that
+                this feeling of accomplishment after surpassing the struggles
+                and challenges while coding and bringing my ideas to life, is
+                truly addictive. I guess "New Passion" unlocked.
+              </p>
+            </div>
+
+            <div class="details-container">
+              <h2 class="about-title" data-value="My Details:">My Details:</h2>
+              <ul class="details">
+                <li>
+                  <p><span>Full Name:</span> Anatolie Gheorghilas</p>
+                </li>
+                <li>
+                  <p><span>Age:</span> 29</p>
+                </li>
+                <li><i class="fa-solid fa-location-dot"></i> Iasi, Romania</li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:gheorghilas.anatolie@gmail.com"
+                    >gheorghilas.anatolie@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="details-container">
+              <h2 class="about-title" data-value="Languages I speak:">
+                Languages I speak:
+              </h2>
+              <ul class="skills">
+                <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                <li><i class="fa-brands fa-css3"></i> CSS3</li>
+                <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+                <li><i class="fa-brands fa-react"></i> React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------- Projects ---------------------->
+
+      <section id="projects" class="projects">
+        <div class="projects-container">
+          <h1 class="section-title">Projects</h1>
+          <ul class="projects-list">
+            <li class="project">
+              <div class="project_img-wraper">
+                <img
+                  class="project-img"
+                  src="images/plant-home.png"
+                  alt="picture of a project"
+                />
+                <a href="https://plant-home-ecom.netlify.app/" target="_blank"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/Mor7y/Plant-Home-Ecommerce-Demo.git"
+                  target="_blank"
+                  >&lt;/Code&gt;
+                </a>
+              </div>
+              <div class="project-details">
+                <h2 class="project-title" data-value="Plant Home">
+                  Plant Home
+                </h2>
+                <p class="project-description">
+                  A front-end ecommerce demo website designed to mimic real
+                  ecommerce features like a shopping cart and product
+                  management.
+                </p>
+
+                <div class="project-build">
+                  <i class="fa-brands fa-html5"></i
+                  ><i class="fa-brands fa-css3"></i>
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project_img-wraper">
+                <img
+                  class="project-img"
+                  src="images/cooking-inspirations.png"
+                  alt="picture of a project"
+                />
+                <a
+                  href="https://cooking-inspirations.netlify.app/"
+                  target="_blank"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/Mor7y/recipe-search.git"
+                  target="_blank"
+                  >&lt;/Code&gt;
+                </a>
+              </div>
+              <div class="project-details">
+                <h2 class="project-title" data-value="Coocking inspirtaions">
+                  Coocking inspirtaions
+                </h2>
+                <p class="project-description">
+                  An recipe search website, search a recipe by queries or
+                  filters and get yourself inspired for your next meal.
+                </p>
+
+                <div class="project-build">
+                  <i class="fa-brands fa-css3"></i>
+                  <i class="fa-brands fa-react"></i>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project_img-wraper">
+                <img
+                  class="project-img"
+                  src="images/quizz-time.png"
+                  alt="picture of a project"
+                />
+                <a href="https://trivia-quizz-time.netlify.app/" target="_blank"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/Mor7y/trivia-quizz-app.git"
+                  target="_blank"
+                  >&lt;/Code&gt;
+                </a>
+              </div>
+              <div class="project-details">
+                <h2 class="project-title" data-value="Quizz Time">
+                  Quizz Time
+                </h2>
+                <p class="project-description">
+                  A fun quiz trivia website that tests your knowledge across
+                  various categories. Have fun!
+                </p>
+
+                <div class="project-build">
+                  <i class="fa-brands fa-css3"></i>
+                  <i class="fa-brands fa-react"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-------------------- Contact ---------------------->
+
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <h1 class="section-title">Contact</h1>
+          <div class="contact-left">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-type">
+                  <h4>Email:</h4>
+                  <a
+                    class="contact-link"
+                    href="mailto:gheorghilas.anatolie@gmail.com"
+                    >gheorghilas.anatolie@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-type">
+                  <h4>Phone:</h4>
+                  <p class="contact-link">currently unavailabe</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-type">
+                  <h4>Location:</h4>
+                  <a
+                    class="contact-link"
+                    href="https://goo.gl/maps/DPQSJdyk9vvCxskY8"
+                    target="_blank"
+                    >Iasi, Romania</a
+                  >
+                </div>
+              </li>
+              <li class="contact-item">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173637.89005718476!2d27.446888713706684!3d47.1560519213331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1679828521022!5m2!1sro!2sro"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-right">
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/gheorghilas.anatolie@gmail.com"
+              method="POST"
+            >
+              <div class="input-container">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Subject(Optional)"
+                />
+              </div>
+              <div class="input-container">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  rows="10"
+                  placeholder="Your Message"
+                  spellcheck="true"
+                ></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/e7df91fc23.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
