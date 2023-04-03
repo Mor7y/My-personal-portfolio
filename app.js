@@ -4,7 +4,10 @@ const navSections = document.querySelectorAll(".nav-list a");
 const themeMenuToggle = document.querySelector(".theme i");
 const themePalete = document.querySelector(".color-palete");
 const themeColors = document.querySelectorAll(".color-palete li");
-const scrollTop = document.querySelector('.scroll-top')
+const scrollTop = document.querySelector(".scroll-top");
+const contacFrom = document.querySelector(".contact-form");
+const contactInput = contacFrom.querySelectorAll("input");
+const contactTextArea = contacFrom.querySelector("textarea");
 
 //----------------Events-----------------------//
 
@@ -46,6 +49,16 @@ window.onload = () => {
 
 themeMenuToggle.onclick = () => {
   toggleElement(themePalete, themeMenuToggle);
+};
+
+contacFrom.onsubmit = (e) => {
+  e.preventDefault();
+  if (subject.value === "") return;
+
+  contactInput.forEach((input) => {
+    input.value = "";
+  });
+  contactTextArea.value = "";
 };
 
 //-------------Functions------------------//
@@ -147,7 +160,7 @@ const textObserver = new IntersectionObserver(
   { threshold: 0.6 }
 );
 
-textObserver.observe(homeTitle);
+textObserver.observe(homeTitle); 
 textObserver.observe(homeSubTitle);
 aboutTitles.forEach((title) => {
   textObserver.observe(title);
@@ -177,13 +190,12 @@ window.onscroll = () => {
     const offsetTop = section.offsetTop - 500;
     const offsetBottom = section.clientHeight + offsetTop;
     const sectionId = section.getAttribute("id");
-    
-    if(window.scrollY > 300){
-      scrollTop.classList.add('show')
-    }else{
-      scrollTop.classList.remove('show')
-    }
 
+    if (window.scrollY > 300) {
+      scrollTop.classList.add("show");
+    } else {
+      scrollTop.classList.remove("show");
+    }
 
     if (window.scrollY > offsetTop && window.scrollY < offsetBottom) {
       const navSection = document.querySelector(
